@@ -29,6 +29,11 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;;Fix the warnings
+(defvar ido-cur-item nil)
+(defvar ido-default-item nil)
+(defvar ido-cur-list nil)
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
@@ -156,6 +161,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
+ '(delete-selection-mode nil)
  '(package-selected-packages
    (quote
     (flycheck-pos-tip flycheck-clojure ac-cider magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
