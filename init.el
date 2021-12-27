@@ -4,12 +4,15 @@
 
 ;; Define package repositories
 (require 'package)
+;;(add-to-list 'package-archives
+;;             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("tromey" . "http://tromey.com/elpa/") t)
+
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa-stable.milkbox.net/packages/") t)
+         '("melpa" . "https://melpa.org/packages/") t)
+
+
 
 ;;(add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
@@ -82,8 +85,8 @@
     ac-cider
 
     ;;Squiglly Clojure
-    flycheck-clojure
-    flycheck-pos-tip
+   ;; flycheck-clojure
+    ;;flycheck-pos-tip
 
     ))
 
@@ -164,7 +167,7 @@
  '(delete-selection-mode nil)
  '(package-selected-packages
    (quote
-    (flycheck-pos-tip flycheck-clojure ac-cider magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (scala-mode php-mode dockerfile-mode json-mode markdown-mode yaml-mode flycheck-pos-tip flycheck-clojure ac-cider magit tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
